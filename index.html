@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Stockie</title>
+</head>
+<body>
+    <!-- NAV BAR -->
+    <nav class="navbar">
+        <span style="letter-spacing: 2px;">STOCKIE</span>
+        <form class="form-inline">
+            <select name="country" id="country-code">
+                <option value="KR">KR</option>
+                <option value="US">US</option>
+            </select>
+            <input id="search-input" class="form-control mr-sm-2" type="search" placeholder="add by code" aria-label="Search">
+            <button id="search-btn" class="btn my-2 my-sm-0" type="button">ADD</button>
+        </form>
+    </nav>
+
+    <!-- KOSPI / KOSDAQ information -->
+    <div class="container mx-auto">
+        <div class="row">
+            <div class="col">
+                <span>KOSPI idx.</span>
+                <div id="kospi-info">
+                    <span id="kospi-idx">2340.00</span>
+                    <div>
+                        <span id="kospi-diff-num">40.00 (1.50%)</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <span>KOSDAQ idx.</span>
+                <div id="kosdaq-info">
+                    <span id="kosdaq-idx">840.00</span>
+                    <div>
+                        <span id="kosdaq-diff-num">25.00 (2.95%)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <!-- BOOKMARKED items -->
+        <!-- <div class="row">
+            <div class="col stock-item">
+                <span class="stock-item-title">
+                    KAKAO
+                </span>
+                <span class="stock-item-price">
+                    360000
+                </span>
+                <span class="stock-item-difference">
+                    12000 (3.45%)
+                </span>
+            </div>
+        </div> -->
+        <div id="stock-item-container" class="container mx-auto"></div>
+    </div>
+    <script src="./src/jquery.min.js"></script>
+    <script src="./src/bootstrap.min.js"></script>
+    <script src="./src/refs.js"></script>
+    <script src="./src/stockDisplayComponent.js"></script>
+    <script src="./src/stockDisplay.js"></script>
+    <script src="./src/stockIndex.js"></script>
+</body>
+</html>
