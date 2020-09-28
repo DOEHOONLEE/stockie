@@ -20,18 +20,4 @@ searchButton.addEventListener("click", function(e) {
     const title = JSON.parse(bookmarkedItems[bookmarkedItems.length-1])[0];
     const country = JSON.parse(bookmarkedItems[bookmarkedItems.length-1])[1];
     stockDisplay(title, country);
-})
-
-// fetch("https://apidojo-yahoo-finance-v1.p.rapidapi.com/market/v2/get-quotes?symbols=%255EKOSPI&region=KR", {
-// 	"method": "GET",
-// 	"headers": {
-// 		"x-rapidapi-host": "apidojo-yahoo-finance-v1.p.rapidapi.com",
-// 		"x-rapidapi-key": "441f41698cmsheee535d933b00e0p1b09ffjsn257927ff9a9a"
-// 	}
-// })
-// .then(response => {
-// 	console.log(response);
-// })
-// .catch(err => {
-// 	console.log(err);
-// });
+});
