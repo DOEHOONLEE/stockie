@@ -1,5 +1,4 @@
 body {
-    background-color: aliceblue;
     margin: 0 auto;
     max-width: 700px;
     font-family: 'Ubuntu', sans-serif;
@@ -21,6 +20,10 @@ nav {
     padding: 0;
     border: 2px solid black;
     outline: none;
+}
+
+.col {
+    background-color: aliceblue;
 }
 
 select {

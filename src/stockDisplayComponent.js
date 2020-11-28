@@ -1,6 +1,6 @@
 // 코스피/ 코스닥 컴포넌트
-function kospiANDkosdaq(target, price, diff) {
-    if (target == '^KOSPI') {
+function indexDisplay(title, price, diff) {
+    if (title == 'KOSPI.KS') {
         kospiIndex.innerHTML = price;
         kospiDiff.innerHTML = diff;
     }
@@ -9,7 +9,6 @@ function kospiANDkosdaq(target, price, diff) {
         kosdaqDiff.innerHTML = diff;
     }
 }
-
 
 // 주식종목 즐겨찾기 컴포넌트
 function stockItemAdder(itemTitle, itemPrice, itemDiff) {
@@ -24,7 +23,7 @@ function stockItemAdder(itemTitle, itemPrice, itemDiff) {
         
         const itemCol = document.createElement('DIV');
         itemCol.className = "col stock-item";
-        itemCol.style.backgroundColor = (rise) ? "hotpink" : "skyblue";
+        itemCol.style.backgroundColor = (rise) ? "rgb(255,153,204, 0.6)" : "rgb(135,206,235, 0.6)";
         
         const title = document.createElement('SPAN');
         title.className = "stock-item-title";
