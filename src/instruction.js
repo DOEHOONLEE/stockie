@@ -1,0 +1,1 @@
+alert("Make sure to type in stock code (ex. 035720.KS)");
