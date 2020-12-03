@@ -19,7 +19,6 @@ async function stockDisplay(title, country) {
 
     (data.quoteResponse.result[0].regularMarketChange > 0) ? rise = true : rise = false;
 
-    console.log(title)
 
     if (title.split(" ")[0] == 'KOSPI.KS' || title.split(" ")[0] == 'Kosdaq') {
         title = title.split(" ")[0];
